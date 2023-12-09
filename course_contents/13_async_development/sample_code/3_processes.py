@@ -19,25 +19,26 @@ def complex_calculation():
 
 # With a single thread, we can do one at a time—e.g.
 start = time.time()
+print(f'start time for single thread - {start}')
 ask_user()
 complex_calculation()
 print('Single thread total time: ', time.time() - start, '\n\n')
 
 
-####### TWO PROCESSES
+# ####### TWO PROCESSES
 
 
-# With two processes, we can do them both at once...
-process = Process(target=complex_calculation)
-process.start()
+# # With two processes, we can do them both at once...
+# process = Process(target=complex_calculation)
+# process.start()
 
-start = time.time()
+# start = time.time()
 
-ask_user()
+# # ask_user()
 
-process.join()  # this waits for the process to finish
+# # process.join()  # this waits for the process to finish
 
-print('Two process total time: ', time.time() - start)
+# print('Two process total time: ', time.time() - start)
 
-# Run this and see what happens!
+# # Run this and see what happens!
 

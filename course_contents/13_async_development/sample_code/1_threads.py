@@ -31,6 +31,7 @@ print('Single thread total time: ', time.time() - start, '\n\n')
 thread = Thread(target=complex_calculation)
 thread2 = Thread(target=ask_user)
 
+
 start = time.time()
 
 thread.start()
