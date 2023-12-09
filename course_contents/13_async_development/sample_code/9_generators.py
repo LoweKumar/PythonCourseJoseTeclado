@@ -8,6 +8,7 @@ tasks = [countdown(10), countdown(5), countdown(20)]
 
 while tasks:
     task = tasks[0]
+    # print(f'printing task - {task}')
     tasks.remove(task)
     try:
         x = next(task)
